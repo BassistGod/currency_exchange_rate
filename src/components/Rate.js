@@ -1,6 +1,8 @@
 import React from "react";
 import "./Rate.css";
 
+import Calculator from "./Calculator";
+
 class Rate extends React.Component {
   constructor(props) {
     super(props);
@@ -55,6 +57,10 @@ class Rate extends React.Component {
             </div>
           ))}
         </div>
+        <Calculator
+          currencyRate={this.state.currencyRate}
+          baseCurrency={this.state.baseCurrency}
+        />
       </div>
     );
   }

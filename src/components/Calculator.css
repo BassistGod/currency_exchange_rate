@@ -1,0 +1,24 @@
+.block {
+  position: relative;
+  padding: 20px 15px 20px 20px;
+  border: 1px solid #5D5C61;
+  border-top: 1px solid #7395AE;
+  background: #ededed;
+  margin: 20px;
+}
+
+.block div {
+  margin-bottom: 20px;
+}
+
+.calc-res {
+  font-size: 1.2rem;
+}
+  
+.calc-res li {
+  margin: 20px 0;
+}
+
+.input-pad {
+  margin: 0 10px;
+}

@@ -20,6 +20,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
+li, ul,
 dl, dt, dd, ol, ol, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -100,26 +101,7 @@ main, .site-content {
   padding: 30px 20px;
 }
 
-.block {
-  position: relative;
-  padding: 20px 15px 20px 20px;
-  border: 1px solid #5D5C61;
-  border-top: 1px solid #7395AE;
-  background: #ededed;
-  margin: 20px;
-}
 
-.block div {
-  margin-bottom: 20px;
-}
-
-.calc-res {
-  font-size: 1.2rem;
-}
-  
-.calc-res li {
-  margin: 10px 0;
-}
   
 
 
