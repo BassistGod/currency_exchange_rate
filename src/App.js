@@ -1,9 +1,14 @@
 import React from "react";
 import "./App.css";
 
+import { Routes, Route, Link } from "react-router-dom";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Rate from "./components/Rate";
+import Exchange from "./components/Exchange";
+import Contacts from "./components/Contacts";
+import Notfoundpage from "./components/Notfoundpage";
 
 class App extends React.Component {
   constructor(props) {
@@ -15,21 +20,15 @@ class App extends React.Component {
         <Header />
         <div className="container">
           <main>
-            <Rate />
+            <Routes>
+              <Route path="/" element={<Rate />} />
+              <Route path="/exchange" element={<Exchange />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="*" element={<Notfoundpage />} />
+            </Routes>
           </main>
         </div>
 
-        <div className="container" id="cookie_info">
-          <div className="site-content">
-            <div className="well">
-              На нашем сайте мы используем cookie для сбора информации
-              технического характера. <br />В частности, для персонифицированной
-              работы сайта мы обрабатываем IP-адрес региона вашего
-              местоположения. &nbsp;
-              <button className="btn btn-primary btn-sm">ОК</button>
-            </div>
-          </div>
-        </div>
         <Footer />
       </div>
     );

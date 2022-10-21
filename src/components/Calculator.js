@@ -41,12 +41,7 @@ class Calculator extends React.Component {
                   </option>
                 ))}
               </select>
-              <input
-                className="input-pad"
-                value="Рассчитать"
-                type="submit"
-                defaultValue="calc"
-              />
+              <input className="input-pad" value="Рассчитать" type="submit" />
             </form>
           </div>
 

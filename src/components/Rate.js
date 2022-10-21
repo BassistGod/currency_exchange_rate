@@ -12,12 +12,14 @@ class Rate extends React.Component {
       baseCurrency: "USD",
       currency: ["RUB", "EUR", "BYN", "UAH", "CNY", "GBP"],
     };
+  }
+  componentDidMount() {
     this.getRate();
   }
 
   getRate = () => {
     let myHeaders = new Headers();
-    myHeaders.append("apikey", "tm7ZhBMhMmtXrt8G7ppKXaBJHYN4vBUc");
+    myHeaders.append("apikey", "smc03eRoQkpQws8zjU1PUrpUcpgqAw8i");
 
     let requestOptions = {
       method: "GET",
@@ -36,7 +38,6 @@ class Rate extends React.Component {
         this.state.currency.map(
           (currency) => (currencyResult[currency] = result.rates[currency])
         );
-        console.log(currencyResult);
         this.setState({ currencyRate: currencyResult });
       })
       .catch((error) => console.log("error", error));
